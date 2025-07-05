@@ -7,7 +7,7 @@ const getApiBaseUrl = () => {
   
   // In development, use the development server URL
   // You can adjust this port if needed for your dev setup
-  return 'http://localhost:3001';
+  return 'http://localhost:3000';
 };
 
 export const API_BASE_URL = getApiBaseUrl();

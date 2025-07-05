@@ -81,7 +81,9 @@ app.use(helmet({
         "https://*.spock.replit.dev",
         "http://localhost:*",
         "https://localhost:*",
-        "https://*.amazonaws.com"
+        "https://*.amazonaws.com",
+        "wss://*.supabase.co",
+        "https://*.supabase.co"
       ],
       mediaSrc: [
         "'self'", 
@@ -92,11 +94,12 @@ app.use(helmet({
         "https://*.spock.replit.dev",
         "http://localhost:*",
         "https://localhost:*",
-        "https://*.amazonaws.com"
+        "https://*.amazonaws.com",
+        "https://*.supabase.co"
       ],
       scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
       styleSrc: ["'self'", "'unsafe-inline'"],
-      imgSrc: ["'self'", "data:", "blob:"],
+      imgSrc: ["'self'", "data:", "blob:", "https://*.supabase.co", "https://*.amazonaws.com"],
       fontSrc: ["'self'", "data:"],
       workerSrc: ["'self'", "blob:"]
     }

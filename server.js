@@ -60,7 +60,7 @@ async function signMediaUrlsInMessages(messages) {
 
 console.log('🚀 Initializing Express app...');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 console.log('🔧 Setting up middleware...');
 app.use(cors());

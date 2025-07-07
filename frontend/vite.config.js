@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => ({
     host: "0.0.0.0",
     proxy: {
       '/api': {
-        target: mode === 'development' ? 'http://localhost:3000' : undefined,
+        target: mode === 'development' ? 'http://localhost:3001' : undefined,
         changeOrigin: true,
         secure: false
       }
